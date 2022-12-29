@@ -6,21 +6,14 @@ type PageContentProps = {
 };
 
 const PageContent: React.FC<PageContentProps> = ({ children }) => {
-  console.log('page content children', children);
   return (
-    <Flex justify='center' p='16px 8px ' border='1px solid red'>
-      <Flex
-        justify='center'
-        width='95%'
-        maxWidth='860'
-        border='1px solid green'
-      >
+    <Flex justify='center' p='16px 8px'>
+      <Flex justify='center' width='95%' maxWidth='860'>
         {/* LHS  */}
         <Flex
           direction='column'
           width={{ base: '100%', md: '65%' }}
           mr={{ base: 0, md: 6 }}
-          border='1px solid blue'
         >
           {children && children[0]}
         </Flex>
@@ -29,7 +22,6 @@ const PageContent: React.FC<PageContentProps> = ({ children }) => {
           direction='column'
           display={{ base: 'none', md: 'flex' }}
           flexGrow={1}
-          border='1px solid yellow'
         >
           {children && children[1]}
         </Flex>

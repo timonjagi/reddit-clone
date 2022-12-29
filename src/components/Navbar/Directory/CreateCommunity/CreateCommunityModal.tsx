@@ -89,13 +89,16 @@ const CreateCommunityModal: React.FC<CreateCommunityModalProps> = ({
           privacyType: communityType,
         });
 
-        transaction.set(
-          doc(fireStore, `users/${user?.uid}/communities`, communityName),
-          {
-            communityId: communityName,
-            isModerator: true,
-          }
+        const userDocRef = doc(
+          fireStore,
+          `users/${user?.uid}/communities`,
+          communityName
         );
+
+        transaction.set(userDocRef, {
+          communityId: communityName,
+          isModerator: true,
+        });
       });
 
       setError(' ');
