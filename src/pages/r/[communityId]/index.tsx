@@ -8,6 +8,9 @@ import Communities from '../../../components/Navbar/Directory/Communities';
 import CommunityNotFound from '../../../components/Community/CommunityNotFound';
 import Header from '../../../components/Community/Header';
 import PageContent from '../../../components/Layout/PageContent';
+import CreatePostLink from '../../../components/Community/Posts/CreatePostLink';
+import Posts from '../../../components/Community/Posts/PostsList';
+import PostsList from '../../../components/Community/Posts/PostsList';
 
 type communityPageProps = {
   communityData: Community;
@@ -48,11 +51,9 @@ const communityPage: React.FC<communityPageProps> = ({ communityData }) => {
 
       <PageContent>
         <>
-          <div>Left hand side</div>
-          <div>Left hand side</div>
-          <div>Left hand side</div>
-          <div>Left hand side</div>
-          <div>Left hand side</div>
+          <CreatePostLink />
+
+          <PostsList communityData={communityData} />
         </>
         <>
           <div>Right hand side</div>
