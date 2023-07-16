@@ -20,7 +20,7 @@ A clone of Reddit built using Next.js, Firebase v9, Chakra UI, TypeScript and Re
 
 
 ## Roadmap
-
+- Image / video posts
 - Manage user profile
 - Notifications
 - Private Messaging
