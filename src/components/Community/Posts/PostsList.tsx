@@ -41,7 +41,7 @@ const PostsList: React.FC<PostsListProps> = ({ communityData }) => {
     } catch (error: any) {
       console.log('getPosts query', error.message);
     }
-    setLoading();
+    setLoading(false);
   };
 
   useEffect(() => {
