@@ -22,5 +22,7 @@ Insert gif or link to demo
 
 ## Roadmap
 
-- Manage user profile 
+- Manage user profile
+- Notifications
+- Private Messaging
 
