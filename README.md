@@ -6,8 +6,7 @@ A clone of Reddit built using Next.js, Firebase v9, Chakra UI, TypeScript and Re
 
 ## Demo
 
-Insert gif or link to demo
-
+[Demo](https://reddit-clone-gamma-nine.vercel.app/)
 
 ## Features
 
